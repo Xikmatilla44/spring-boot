@@ -1,0 +1,5 @@
+{
+  "timestamp": "2019-08-05T10:11:03.529+0000",
+  "message": "could not execute query; SQL [select role0_.id as id1_2_, role0_.name as name2_2_ from roles role0_]; nested exception is org.hibernate.exception.DataException: could not execute query",
+  "details": "uri=/api/auth/RoleName"
+}

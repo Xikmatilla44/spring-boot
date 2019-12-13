@@ -33,7 +33,7 @@ public class JwtProvider {
 		                .signWith(SignatureAlgorithm.HS512, jwtSecret)
 		                .compact();
     }
-    
+
     public boolean validateJwtToken(String authToken) {
         try {
             Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(authToken);

@@ -1,4 +1,8 @@
 package com.grokonez.jwtauthentication.kafedra.repository;
 
-public interface KafedraRepository {
+import com.grokonez.jwtauthentication.kafedra.model.Kafedra;
+import org.springframework.data.repository.CrudRepository;
+
+public interface KafedraRepository extends CrudRepository<Kafedra, Long> {
+
 }

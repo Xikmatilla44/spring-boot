@@ -3,10 +3,11 @@ package com.grokonez.jwtauthentication.students.convert.mapper;
 import com.grokonez.jwtauthentication.dekanat.model.Dekanat;
 import com.grokonez.jwtauthentication.students.convert.dto.StudentDTO;
 import com.grokonez.jwtauthentication.students.model.Student;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class ConvertStudent {
 
 //    public StudentDTO toDTO(Student student) {

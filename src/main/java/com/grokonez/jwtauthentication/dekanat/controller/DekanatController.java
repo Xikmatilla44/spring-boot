@@ -1,5 +1,6 @@
 package com.grokonez.jwtauthentication.dekanat.controller;
 
+import com.grokonez.jwtauthentication.bolim.exception.ResourceNotFoundException;
 import com.grokonez.jwtauthentication.dekanat.convert.dto.DekanatDTO;
 import com.grokonez.jwtauthentication.dekanat.convert.mapper.ConvertDekanat;
 import com.grokonez.jwtauthentication.dekanat.model.Dekanat;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -25,6 +25,9 @@ public class DekanatController {
 
     @Autowired
     private DekanatRepository dekanatRepository;
+
+    @Autowired
+    private ConvertDekanat convertDekanat;
 
 
     @Autowired
@@ -43,21 +46,21 @@ public class DekanatController {
 
     @PostMapping("/savedekanat")
     public ResponseEntity save(@Valid @RequestBody DekanatDTO dekanatDTO) {
-       ConvertDekanat convertDekanat = new ConvertDekanat();
-      return ResponseEntity.ok(dekanatService.saveDekanat(convertDekanat.toEntity(dekanatDTO)));
+        Dekanat dekanat = convertDekanat.toEntity(dekanatDTO);
+        List<Dekanat> dekanats = (List<Dekanat>) dekanatService.saveDekanat(dekanat);
+        DekanatDTO dekanatDTOS = (DekanatDTO) convertDekanat.toDTO(dekanats);
+
+        return ResponseEntity.ok(dekanatDTOS);
 
     }
 
 
-//    @GetMapping(value = "/editeDekanat/{id}")
-//    public List<Dekanat> getByIdDekanat(@PathVariable Long id){
-//        ConvertDekanat convertDekanat = new ConvertDekanat();
-//        Dekanat dekanat = dekanatService.getByIdDekanat(id);
-//
-//        return  dekanat;
-//
-//
-//    }
+    @GetMapping(value = "/editeDekanat/{id}")
+    public DekanatDTO getByIdDekanat(@PathVariable Long id){
+        Dekanat dekanat = dekanatService.getByIdDekanat(id);
+
+        return convertDekanat.toDTOS(dekanat);
+    }
 
 
     @DeleteMapping("/deleteDekanat/{id}")
@@ -71,6 +74,29 @@ public class DekanatController {
         }
 
     }
+
+
+    @PutMapping("/dekanatPut/{id}")
+    public ResponseEntity<Dekanat> updateStudent(@PathVariable(value = "id") Long dekanatId,
+                                                 @Valid @RequestBody Dekanat dekanatDetails) throws ResourceNotFoundException {
+        Dekanat dekanat = dekanatRepository.findById(dekanatId)
+                .orElseThrow(() -> new ResourceNotFoundException("Student not found for this id :: " + dekanatId));
+        dekanat.setName(dekanatDetails.getName());
+
+        final Dekanat updatedDekanat = dekanatRepository.save(dekanat);
+
+        return ResponseEntity.ok(updatedDekanat);
+
+    }
+
+    @GetMapping("/dekanatByName/{name}")
+    public List<Dekanat> getByName(@PathVariable String name) {
+        List<Dekanat> list = dekanatService.getByName(name);
+
+        return list;
+
+    }
+
 
 
 

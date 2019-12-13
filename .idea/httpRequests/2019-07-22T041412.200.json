@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "firstName": "Xikmat",
+    "lastName": "Maxmudov",
+    "phone": "258289922",
+    "email": "Xikmatilla@mail.com",
+    "dekanatId": 1,
+    "dekanatName": "Dinshunoslik"
+  },
+  {
+    "id": 2,
+    "firstName": "Islombek",
+    "lastName": "Mamatqov",
+    "phone": "2656562296",
+    "email": "Islombek@mail.com",
+    "dekanatId": 2,
+    "dekanatName": "Ivat"
+  },
+  {
+    "id": 3,
+    "firstName": "Doston",
+    "lastName": "Xamrayev",
+    "phone": "66889216",
+    "email": "Dostonbek@mailcom",
+    "dekanatId": 4,
+    "dekanatName": "Islomshunoslik"
+  }
+]

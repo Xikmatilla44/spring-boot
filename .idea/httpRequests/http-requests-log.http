@@ -1,0 +1,398 @@
+GET http://localhost:8080/api/auth/AllKafedra
+Accept: */*
+Cache-Control: no-cache
+
+name
+
+<> 2019-09-03T025732.200.json
+
+###
+
+GET http://localhost:8080/api/auth/AllKafedra
+Accept: */*
+Cache-Control: no-cache
+
+name
+
+<> 2019-09-03T024828-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/AllKafedra
+Accept: */*
+Cache-Control: no-cache
+
+name
+
+<> 2019-09-03T024828.200.json
+
+###
+
+GET http://localhost:8080/api/auth/ActivePassivName
+Accept: */*
+Cache-Control: no-cache
+
+name
+
+<> 2019-08-07T101508-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/ActivePassivName
+Accept: */*
+Cache-Control: no-cache
+
+name
+
+<> 2019-08-07T101508.200.json
+
+###
+
+POST http://localhost:8080/api/auth/saceRoleName
+Accept: */*
+Cache-Control: no-cache
+
+name
+
+<> 2019-08-05T043417.404.json
+
+###
+
+POST http://localhost:8080/api/auth/saceRoleName
+Accept: */*
+Cache-Control: no-cache
+
+name
+
+<> 2019-08-05T043416.404.json
+
+###
+
+POST http://localhost:8080/api/auth/saceRoleName
+Accept: */*
+Cache-Control: no-cache
+
+name
+
+<> 2019-08-05T043413.404.json
+
+###
+
+GET http://localhost:8080/api/auth/RoleName
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-05T043327-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/RoleName
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-05T043327.200.json
+
+###
+
+GET http://localhost:8080/api/auth/RoleName
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-05T043243-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/RoleName
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-05T043243.200.json
+
+###
+
+GET http://localhost:8080/api/auth/RoleName
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-05T031104-1.500.json
+
+###
+
+GET http://localhost:8080/api/auth/RoleName
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-05T031104.500.json
+
+###
+
+GET http://localhost:8080/api/auth/savedekanat
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/auth/savedekanat
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/auth/savedekanat
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/auth/savedekanat
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/auth/savedekanat
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/auth/savedekanat
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/auth/saveEducation
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/api/auth/saveEducation
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-01T032934-2.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-01T032934-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-01T032934.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-01T032933.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-08-01T032929.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T044138-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T044138.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T043947-2.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T043947-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/dekanat
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T043947.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T041412.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T041054.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T041052-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T041052.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T041045.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040851-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040851.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040850.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040849.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040848-1.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040848.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040844.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040830.200.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040618.500.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040048-2.500.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040048-1.500.json
+
+###
+
+GET http://localhost:8080/api/auth/Student
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-07-22T040048.500.json
+
+###
+

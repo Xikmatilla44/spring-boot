@@ -18,16 +18,18 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Enumerated(EnumType.STRING)
-    @NaturalId
-    @Column(length = 60)
-    private RoleName name;
+//    @Enumerated(EnumType.STRING)
+////    @NaturalId
+    @Column(name = "name",length = 60)
+    private String name;
 
     public Role() {}
 
-    public Role(RoleName name) {
+
+    public Role(String name) {
         this.name = name;
     }
+
 
     public Long getId() {
         return id;
@@ -37,11 +39,12 @@ public class Role {
         this.id = id;
     }
 
-    public RoleName getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(RoleName name) {
+    public void setName(String name) {
         this.name = name;
     }
+
 }

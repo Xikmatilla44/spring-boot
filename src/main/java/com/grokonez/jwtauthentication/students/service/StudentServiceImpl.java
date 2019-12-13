@@ -6,10 +6,11 @@ import com.grokonez.jwtauthentication.students.respository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class StudentServiceImpl implements StudentService{
+public class StudentServiceImpl implements StudentService {
 
     private StudentRepository studentRepository;
 
@@ -35,10 +36,26 @@ public class StudentServiceImpl implements StudentService{
     }
 
     @Override
-    public List<Student> getById(Long id) {
-
-        return null;
+    public Student getById(Long id) {
+        return studentRepository.findById(id).get();
     }
 
+    @Override
+    public List<Student> getByName(String name) {
+        ArrayList<Student> list = new ArrayList<>();
+        List<Student> list1 = studentRepository.getByName(name);
+        for (Student num : list1) {
+            Student student = new Student();
+            student.setId(num.getId());
+            student.setFirstName(num.getFirstName());
+            student.setLastName(num.getLastName());
+            student.setPhone(num.getPhone());
+            student.setEmail(num.getEmail());
+            student.setDekanat(num.getDekanat());
+            list.add(student);
+        }
+
+        return list;
+    }
 
 }

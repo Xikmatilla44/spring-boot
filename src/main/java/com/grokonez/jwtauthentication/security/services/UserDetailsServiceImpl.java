@@ -27,4 +27,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         return UserPrinciple.build(user);
     }
+
+
+    public Iterable<User>listAllUser() {
+        return userRepository.findAllByOrderByIdAsc();
+
+    }
+
 }

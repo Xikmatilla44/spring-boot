@@ -4,7 +4,6 @@ import com.grokonez.jwtauthentication.bolim.exception.ResourceNotFoundException;
 import com.grokonez.jwtauthentication.bolim.model.Education;
 import com.grokonez.jwtauthentication.bolim.repository.EducationRepository;
 import com.grokonez.jwtauthentication.bolim.service.EducationService;
-import com.grokonez.jwtauthentication.bolim.service.EducationServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -44,8 +42,8 @@ public class EducationController {
 
 
     @GetMapping("education/{id}")
-    public Optional<Education> findOne(@PathVariable Integer id) {
-        Optional<Education> education = educationService.getById(id);
+    public Education findOne(@PathVariable Integer id) {
+        Education education = educationService.getById(id);
 
         return education;
 

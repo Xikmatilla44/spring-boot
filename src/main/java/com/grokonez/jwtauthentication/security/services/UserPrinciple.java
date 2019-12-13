@@ -1,5 +1,6 @@
 package com.grokonez.jwtauthentication.security.services;
 
+import com.grokonez.jwtauthentication.model.ActivePassiv;
 import com.grokonez.jwtauthentication.model.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
@@ -22,13 +23,14 @@ public class UserPrinciple implements UserDetails {
 
     private String email;
 
+
     @JsonIgnore
     private String password;
 
     private Collection<? extends GrantedAuthority> authorities;
 
     public UserPrinciple(Long id, String name, 
-			    		String username, String email, String password, 
+			    		String username, String email, String password,
 			    		Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.name = name;
@@ -40,7 +42,7 @@ public class UserPrinciple implements UserDetails {
 
     public static UserPrinciple build(User user) {
         List<GrantedAuthority> authorities = user.getRoles().stream().map(role ->
-                new SimpleGrantedAuthority(role.getName().name())
+                new SimpleGrantedAuthority(role.getName())
         ).collect(Collectors.toList());
 
         return new UserPrinciple(
@@ -64,6 +66,7 @@ public class UserPrinciple implements UserDetails {
     public String getEmail() {
         return email;
     }
+
 
     @Override
     public String getUsername() {

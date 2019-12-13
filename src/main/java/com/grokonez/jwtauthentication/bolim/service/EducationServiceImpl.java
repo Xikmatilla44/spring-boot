@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class EducationServiceImpl implements EducationService {
@@ -37,8 +36,8 @@ public class EducationServiceImpl implements EducationService {
 
 
     @Override
-    public Optional<Education> getById(Integer id) {
-        return educationRepository.findById(id);
+    public Education getById(Integer id) {
+        return educationRepository.findById(id).get();
     }
 
 //    @Override
@@ -73,7 +72,7 @@ public class EducationServiceImpl implements EducationService {
             list.add(education);
         }
 
-        return list1;
+        return list;
     }
 
     }

@@ -12,8 +12,10 @@ public interface StudentRepository extends CrudRepository<Student, Long> {
 
     List<Student> findAllByOrderByIdAsc();
 
-//    @Query(value = "select u from House u where u.name=?1")
-//    List<Student> findByDekanat(@Param("name")Student student);
+
+    @Query(value = "select id, first_name, last_name, phone, email, dekanat_id from students where first_name ilike %:name%", nativeQuery = true)
+    List<Student> getByName(String name);
+
 
 
 }

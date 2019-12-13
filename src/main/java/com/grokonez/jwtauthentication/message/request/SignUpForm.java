@@ -1,5 +1,7 @@
 package com.grokonez.jwtauthentication.message.request;
 
+import com.grokonez.jwtauthentication.model.ActivePassiv;
+
 import java.util.Set;
 
 import javax.validation.constraints.*;
@@ -17,12 +19,15 @@ public class SignUpForm {
     @Size(max = 60)
     @Email
     private String email;
-    
-    private Set<String> role;
-    
+
+
     @NotBlank
     @Size(min = 6, max = 40)
     private String password;
+
+
+    private Set<String> role;
+
 
     public String getName() {
         return name;
@@ -48,6 +53,8 @@ public class SignUpForm {
         this.email = email;
     }
 
+
+
     public String getPassword() {
         return password;
     }
@@ -63,4 +70,5 @@ public class SignUpForm {
     public void setRole(Set<String> role) {
     	this.role = role;
     }
+
 }

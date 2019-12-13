@@ -19,4 +19,10 @@ public interface DekanatRepository extends CrudRepository<Dekanat, Long>{
     List<Dekanat> findByDekanat(@Param("id") Long id);
 
 
+    @Query(value = "select id, name from dekanat where name ilike %:name%", nativeQuery = true)
+    List<Dekanat> getByName(String name);
+
+
+
+
 }

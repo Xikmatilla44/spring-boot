@@ -39,11 +39,13 @@ public class DekanatServiceImpl implements DekanatService {
 
     @Override
     public Dekanat getByIdDekanat(Long id) {
-        return (Dekanat) dekanatRepository.findByDekanat(id);
+        return dekanatRepository.findById(id).get();
     }
 
     @Override
     public List<Dekanat> getByName(String name) {
-        return null;
+        List<Dekanat> list = dekanatRepository.getByName(name);
+
+        return list;
     }
 }

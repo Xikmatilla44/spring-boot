@@ -12,7 +12,11 @@ public interface StudentService {
 
     boolean deleteStudent(Long id);
 
-     List<Student> getById(Long id);
+     Student getById(Long id);
+
+    List<Student> getByName(String firstName);
+
+
 
 
 }
